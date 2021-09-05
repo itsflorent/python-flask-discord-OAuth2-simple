@@ -1,7 +1,7 @@
 # python-flask-discord-OAuth2
 
 Use Python3.8 or higher.
-#Install:
+#Install:#
 pip install requests_oauthlib 
 pip install requests
 pip install flask
