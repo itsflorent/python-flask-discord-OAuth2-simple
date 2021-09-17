@@ -32,7 +32,7 @@ def login():
     try:
         discord1 = OAuth2Session(client_id, token=session['discord_token'])
         response = discord1.get(base_discord_api_url + '/users/@me')
-        return redirect("/")
+        return f"{response.json()}"
     except:
         oauth = OAuth2Session(client_id, redirect_uri=redirect_uri, scope=scope)
         login_url, state = oauth.authorization_url(authorize_url)
